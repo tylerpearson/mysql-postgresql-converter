@@ -117,6 +117,9 @@ def parse(input_filename, output_filename):
                 elif type.startswith("int("):
                     type = "integer"
                     set_sequence = True
+                elif type.startswith("mediumint("):
+                    type = "integer"
+                    set_sequence = True
                 elif type.startswith("bigint("):
                     type = "bigint"
                     set_sequence = True
